@@ -121,3 +121,32 @@
 				});
 
 })(jQuery);
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent page reload
+
+    // Send form data to Google Sheets
+    fetch("https://script.google.com/macros/s/AKfycbybXQkMnXGpY15wVyDbwJyYWHFj4vErdQKISrI-3fw89YNhZvLSP_MxXXvqi_wjjmPJ/exec", {
+        method: "POST",
+        body: new FormData(e.target),
+    })
+    .then((response) => {
+        if (response.ok) {
+            showPopup(); // Show popup on success
+        } else {
+            alert("Error: Unable to send message.");
+        }
+    })
+    .catch((error) => console.error("Error:", error));
+});
+
+// Function to show popup
+function showPopup() {
+    document.getElementById("popupOverlay").style.display = "block";
+    document.getElementById("successPopup").style.display = "block";
+
+    document.getElementById("closePopup").addEventListener("click", function () {
+        document.getElementById("popupOverlay").style.display = "none";
+        document.getElementById("successPopup").style.display = "none";
+    });
+}
