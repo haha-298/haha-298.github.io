@@ -1,17 +1,33 @@
-# haha-298.github.io
-This is my personal website!
+# Lim Xin Yi's Portfolio Website
 
-Free for personal and commercial use under the MIT license and CCA 3.0 license (html5up.net/license)
+![Website Preview](images/preview.png)
 
-Credits:
+A responsive personal portfolio website with light/dark mode toggle, showcasing projects, professional experience, and contact information. Built with HTML, CSS, JavaScript, and Tailwind CSS.
 
-	Demo Images:
-		Unsplash (unsplash.com)
+## Live Demo
+This is my website!
+Just visit the live site at: [https://haha-298.github.io/](https://haha-298.github.io/)
 
-	Icons:
-		Font Awesome (fontawesome.io)
+## Features
 
-	Other
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+✨ **Dual Theme Design**
+- Light Mode: Ocean-inspired theme with dolphins and waves
+- Dark Mode: Space-themed with stars and particles
+
+🎨 **Interactive Elements**
+- 3D cursor blob effect
+- Animated background elements (waves/particles)
+- Smooth theme transition
+
+📱 **Fully Responsive**
+- Mobile-friendly navigation
+- Adaptive layouts for all screen sizes
+
+📂 **Project Showcase**
+- Filterable portfolio grid
+- Detailed project cards with technology tags
+
+💼 **Professional Experience**
+- Timeline-style work history
+- Expandable job details
+
